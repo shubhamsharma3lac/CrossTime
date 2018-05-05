@@ -1,6 +1,9 @@
 function init(){
+    
     var button = document.querySelector(".nav-bar-menu-button");
     button.addEventListener("click", showSlidingPanel, false);
+
+    init2();
 }
 
 function showSlidingPanel()
