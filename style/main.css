@@ -1,0 +1,54 @@
+body { 
+    /* The image used */
+    background: rgb(255, 239, 213, 0.2);   
+    margin: 0;
+    color: white;
+}
+
+.nav-bar
+{
+    background: rgba(0, 255, 127, 0.5);
+    color: white;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-menu-button
+{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    color: white;
+    padding: 8px;
+    margin: 8px 4px;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar-menu-button:hover{
+    background:rgba(0, 255, 127, 1);
+    border: none;
+}
+
+.nav-bar-header
+{
+    font-family: Arial, 'Helvetica', sans-serif;
+    font-size: 22px;
+    margin: 0px 12px;
+}
+
+.nav-bar-header span
+{
+    color: darkgreen
+}
+
+.nav-bar-menu-button svg
+{
+    fill: white;
+}
+
