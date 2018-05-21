@@ -1,0 +1,53 @@
+<div class="body">
+  <div class="form-container centre">
+    <h2>Account Profile</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="text full-size">
+        <label for="email">
+          Email Address:
+          <br>
+          <input id="email" type="text" formControlName="email" class="full-size">
+        </label>
+      </div>
+      <div class="text">
+        <label for="passwd">
+          Password:
+          <br>
+          <input id="passwd" type="password" formControlName="passwd" class="full-size">
+        </label>
+      </div>
+      <div class="text same-width-div">
+      <div class="half-size" style="margin-right: 6px">
+        <label for="firstName">
+          First Name:
+          <br>
+          <input id="firstName" type="text" formControlName="firstName" class="full-size">
+        </label>
+      </div>
+      <div class="half-size" style="margin-left: 6px">
+        <label for="lastName">
+          Last Name:
+          <br>
+          <input id="lastName" type="text" formControlName="lastName" class="full-size">
+        </label>
+      </div>
+    </div>
+      <div class="text">
+        <label for="phone">
+          Phone:
+          <br>
+          <input id="phone" type="text" formControlName="phone" class="full-size">
+        </label>
+      </div>
+      <div class="text">
+        <label for="company">
+          Company:
+          <br>
+          <input id="company" type="text" formControlName="company" class="full-size">
+        </label>
+      </div>
+
+      <button class="submit-button" type="submit" [disabled]="!form.valid">Continue</button>
+    </form>
+  </div>
+</div>
